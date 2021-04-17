@@ -1,1 +1,5 @@
 rootProject.name = 'rest'
+include 'repository'
+include 'service'
+include 'security'
+
