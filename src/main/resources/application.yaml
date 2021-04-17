@@ -1,0 +1,22 @@
+server:
+  servlet:
+    context-path: /api
+    session:
+      cookie:
+        name: AIM_T
+        http-only: true
+        domain: ${DOMAIN:localhost}
+        path: /api
+spring:
+  jpa:
+    properties:
+      hibernate.order_by.default_null_ordering: last
+  datasource:
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:postgres}
+    url: jdbc:postgresql://${DB_URL:localhost:5432}/aim
+  servlet:
+    multipart:
+      enabled: true
+      max-request-size: 100MB
+      max-file-size: 100MB
