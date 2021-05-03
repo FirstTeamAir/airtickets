@@ -2,7 +2,7 @@ package ru.vsu.service.service.validation.code;
 
 public class ParameterCode {
 
-    //ticket errors - 01 - 10
+    //ticket errors - 01 - 08
     public static final String TICKET = "01";
     public static final String TICKET_FROM_CITY = "02";
     public static final String TICKET_TO_CITY = "03";
@@ -11,6 +11,16 @@ public class ParameterCode {
     public static final String TICKET_AIRLINE = "06";
     public static final String TICKET_TRAVEL_CLASS = "07";
     public static final String TICKET_PRICE = "08";
+
+    //user errors - 09 -17
+    public static final String USER = "09";
+    public static final String USER_FIRST_NAME = "10";
+    public static final String USER_LAST_NAME = "11";
+    public static final String USER_ROLE = "12";
+    public static final String USER_PHONE = "13";
+    public static final String USER_EMAIL = "14";
+    public static final String USER_USERNAME = "16";
+    public static final String USER_PASSWORD = "17";
 
     private ParameterCode() {
     }
