@@ -7,6 +7,7 @@ package ru.vsu.repository.entity.type;
  */
 public enum EntityType {
     TICKET("Ticket"),
+    USER("User"),
     AIRLINE("Airline");
 
     private final String entityName;
